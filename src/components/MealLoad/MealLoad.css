@@ -1,0 +1,19 @@
+.mealLoadSection {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.AllMealsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  flex: 3;
+  background-color: black;
+}
+
+.mealDetailsContainer {
+  background-color: orange;
+  flex: 1;
+  border-bottom-left-radius: 20px;
+}
