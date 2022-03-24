@@ -1,6 +1,6 @@
 .mealLoadSection {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   margin-top: 61px;
 }
@@ -11,6 +11,7 @@
   grid-gap: 20px;
   flex: 3;
   background-color: black;
+  padding: 20px;
 }
 
 .mealDetailsContainer {
@@ -23,6 +24,16 @@
 }
 .goToTopBtn {
   display: none;
+}
+
+.mealPic-container {
+  height: 250px;
+  width: 100%;
+}
+.mealPic-container img {
+  height: 250px;
+  width: 100%;
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: 600px) {

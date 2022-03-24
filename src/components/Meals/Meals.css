@@ -32,3 +32,11 @@
   border: 2px solid black;
   color: whitesmoke;
 }
+.area {
+  color: brown;
+  font-weight: bold;
+}
+.catagory {
+  color: green;
+  font-weight: bold;
+}

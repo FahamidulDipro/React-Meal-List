@@ -12,9 +12,9 @@ const Meals = (props) => {
          <div className='mealImg'>
              <img src={strMealThumb} alt="mealPic" />
          </div>
-          <p><b>Catagory: </b>{strCategory}</p>
+          <p><b>Catagory: </b><span className='catagory'>{strCategory}</span></p>
           <p><b>Tags: </b>{strTags}</p>
-          <p><b>Area: </b>{strArea}</p>
+          <p><b>Area: </b><span className='area'>{strArea}</span></p>
          <a href='#meal-name'><button className='Btn' onClick={handler}>See Details  &nbsp;<FontAwesomeIcon icon={faArrowRight} /></button></a>
            
           
