@@ -42,7 +42,7 @@ const MealLoad = (props) => {
                         <div className='mealPic-container'>
                             <img src={mealPic} alt="mealImage" />
                         </div>
-                        <h3>Instructions</h3>
+                        <h3>Cooking Instructions</h3>
                         <p>{mealInstructions}</p>
                         <a href="#search" className='goToTopBtn'><FontAwesomeIcon icon={faArrowCircleUp}/></a>
                 </div>

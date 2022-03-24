@@ -5,7 +5,8 @@ const Navbar = () => {
         <div>
             <nav className='navbar'>
        <div >
-         <h3>Meal List</h3>
+        <img src='favicon.png'/>
+         <h3>Curious Appetite</h3>
        </div>
        <ul className='navbarMenu'> 
          <li><a href="#">Home</a></li>
