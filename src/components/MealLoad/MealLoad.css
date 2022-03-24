@@ -19,12 +19,22 @@
   border-bottom-left-radius: 20px;
   text-align: left;
   padding: 20px;
+  border-radius: 20px;
 }
+.goToTopBtn {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
   .AllMealsContainer {
     grid-template-columns: repeat(1, 1fr);
   }
   .mealLoadSection {
     flex-direction: column;
+  }
+  .goToTopBtn {
+    display: block;
+    color: black;
+    font-size: 30px;
   }
 }

@@ -16,11 +16,19 @@
   border-radius: 20px;
 }
 .Btn {
-  background-color: black;
-  color: whitesmoke;
+  background-color: goldenrod;
+  border: 2px solid black;
+  color: black;
   cursor: pointer;
   padding: 10px;
   border: none;
   outline: none;
   border-radius: 10px;
+  border: 2px solid black;
+  transition: 0.3s ease;
+}
+.Btn:hover {
+  background-color: black;
+  border: 2px solid black;
+  color: whitesmoke;
 }

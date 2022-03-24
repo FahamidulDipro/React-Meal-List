@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowCircleUp } from '@fortawesome/free-solid-svg-icons'
 import React, { useEffect, useState } from 'react';
 import Meals from '../Meals/Meals';
 import './MealLoad.css';
@@ -28,9 +30,10 @@ const MealLoad = (props) => {
             }
         </div>
         <div className='mealDetailsContainer'>
-                <h2>{mealName}</h2>
+                <h2 id='meal-name'>{mealName}</h2>
                 <h3>Instructions</h3>
                 <p>{mealInstructions}</p>
+                <a href="#search" className='goToTopBtn'><FontAwesomeIcon icon={faArrowCircleUp}/></a>
         </div>
         </section>
        

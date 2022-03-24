@@ -15,7 +15,7 @@ const Meals = (props) => {
           <p><b>Catagory: </b>{strCategory}</p>
           <p><b>Tags: </b>{strTags}</p>
           <p><b>Area: </b>{strArea}</p>
-         <button className='Btn' onClick={handler}>See Details  &nbsp;<FontAwesomeIcon icon={faArrowRight} /></button>
+         <a href='#meal-name'><button className='Btn' onClick={handler}>See Details  &nbsp;<FontAwesomeIcon icon={faArrowRight} /></button></a>
            
           
         </div>

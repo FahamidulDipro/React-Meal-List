@@ -11,7 +11,7 @@ const Search = () => {
     }
     const searchIcon = <FontAwesomeIcon icon={faMagnifyingGlass} />
     return (
-        <div className='searchContainer'>
+        <div className='searchContainer' id='search'>
             <h1>Search</h1>
             <input type="text" value={value} onChange={(e) => {setValue(e.target.value)}} className="searchInputField"/>
             {/* <input type="button" value={searchIcon} onClick={searchEvent} className="search-btn"/> */}
