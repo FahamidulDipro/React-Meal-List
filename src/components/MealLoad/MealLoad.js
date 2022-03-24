@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowCircleUp } from '@fortawesome/free-solid-svg-icons'
 import React, { useEffect, useState } from 'react';
 import Meals from '../Meals/Meals';
+import Error from '../Warning/Error';
 import './MealLoad.css';
 const MealLoad = (props) => {
     const [meals,setMeal] = useState([]);
@@ -23,7 +24,26 @@ const MealLoad = (props) => {
     }
 
     return (
-        <section className='mealLoadSection'>
+        // <section className='mealLoadSection'>
+        // <div className='AllMealsContainer'>
+        //     {
+        //         meals.map(meal=><Meals  key={meal.idMeal} meal={meal} handler={()=>handleMealDetails(meal)}></Meals>)
+        //     }
+        // </div>
+        // <div className='mealDetailsContainer'>
+        //         <h2 id='meal-name'>{mealName}</h2>
+        //         <h3>Instructions</h3>
+        //         <p>{mealInstructions}</p>
+        //         <a href="#search" className='goToTopBtn'><FontAwesomeIcon icon={faArrowCircleUp}/></a>
+        // </div>
+        // </section>
+
+
+            
+    (() => {
+        if (meals !== null) {
+        return (
+            <section className='mealLoadSection'>
         <div className='AllMealsContainer'>
             {
                 meals.map(meal=><Meals  key={meal.idMeal} meal={meal} handler={()=>handleMealDetails(meal)}></Meals>)
@@ -36,6 +56,26 @@ const MealLoad = (props) => {
                 <a href="#search" className='goToTopBtn'><FontAwesomeIcon icon={faArrowCircleUp}/></a>
         </div>
         </section>
+             
+        )
+        }  else {
+        return (
+        <Error></Error>
+        )
+        }
+    })()
+
+
+
+
+
+
+
+
+
+
+
+
        
     );
 };
