@@ -1,0 +1,19 @@
+.searchContainer {
+  background-color: black;
+}
+.searchInputField {
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.search-btn {
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: whitesmoke;
+  background-color: black;
+}

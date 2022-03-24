@@ -3,6 +3,9 @@
   justify-content: space-around;
   background-color: brown;
   color: whitesmoke;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .navbarMenu {
   display: flex;

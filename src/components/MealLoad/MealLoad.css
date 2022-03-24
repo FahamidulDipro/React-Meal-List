@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 61px;
 }
 
 .AllMealsContainer {
@@ -22,5 +23,8 @@
 @media only screen and (max-width: 600px) {
   .AllMealsContainer {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .mealLoadSection {
+    flex-direction: column;
   }
 }

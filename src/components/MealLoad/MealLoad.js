@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import Meals from '../Meals/Meals';
 import './MealLoad.css';
-const MealLoad = () => {
+const MealLoad = (props) => {
     const [meals,setMeal] = useState([]);
     const [mealName,setMealDetails] = useState([]);
     const [mealInstructions,setMealInstructions] = useState([]);
+    // const url = 'https://www.themealdb.com/api/json/v1/1/search.php?f=';
+    // const newUrl = url+props.letter;
+    // console.log(newUrl);
     useEffect(()=>{
-        fetch('https://www.themealdb.com/api/json/v1/1/search.php?f=a').then(res=>res.json()).then(data=>setMeal(data.meals))
-    },[])
+        fetch('https://www.themealdb.com/api/json/v1/1/search.php?s='+props.letter).then(res=>res.json()).then(data=>setMeal(data.meals))
+    },[props.letter])
     const handleMealDetails = (meal)=>{
         // console.log(meal);
         const mealName = meal.strMeal;
