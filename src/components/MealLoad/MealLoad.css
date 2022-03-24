@@ -16,4 +16,11 @@
   background-color: orange;
   flex: 1;
   border-bottom-left-radius: 20px;
+  text-align: left;
+  padding: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .AllMealsContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

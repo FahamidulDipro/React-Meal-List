@@ -1,5 +1,8 @@
 import React from 'react';
 import './Meals.css';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const Meals = (props) => {
     const {strMeal,strMealThumb,strCategory,strTags,strInstructions,strArea} = props.meal;
     const {handler} = props;
@@ -12,7 +15,8 @@ const Meals = (props) => {
           <p><b>Catagory: </b>{strCategory}</p>
           <p><b>Tags: </b>{strTags}</p>
           <p><b>Area: </b>{strArea}</p>
-          <button className='Btn' onClick={handler}>See Details</button>
+         <button className='Btn' onClick={handler}>See Details  &nbsp;<FontAwesomeIcon icon={faArrowRight} /></button>
+           
           
         </div>
     );
